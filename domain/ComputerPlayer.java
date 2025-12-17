@@ -86,7 +86,7 @@ public class Game {
             map.print();
 
             if (map.checkWin(row, col, human.getMark())) {
-                System.out.println("🎉 Nyertél!");
+                System.out.println(":) Nyertél!");
                 LOG.info("Emberi játékos nyert");
                 scoreBoard.record(human.getName(), 1, 0, 0);
                 scoreBoard.print();
@@ -113,7 +113,7 @@ public class Game {
         map.print();
 
         if (map.checkWin(move[0], move[1], computer.getMark())) {
-            System.out.println("😞 A gép nyert!");
+            System.out.println(":( A gép nyert!");
             LOG.info("Gép nyert");
             scoreBoard.record(human.getName(), 0, 1, 0);
             scoreBoard.print();
